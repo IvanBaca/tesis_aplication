@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 const routes: Routes = [
   {
-    path: '', loadChildren: './landing/landing.module#LandingModule'
+    path: 'student', loadChildren: './student/student.module#StudentModule'
   },
 ];
 
