@@ -17,9 +17,12 @@ export class NavComponent implements OnInit {
   fillerNav = Array.from({ length: 50 }, (_, i) => `Alumnos ${i + 1}`);
   mobileQuery: MediaQueryList;
   navItems: NavItem[] = [
-    { name: "Estudiante", icon:"map",route:'/student'}
+    { name: "Estudiantes", icon:"map",route:'/student'},
+    { name: "Bienvenida", icon:"map",route:'/'}
+    
   
-  ] ;
+  ];
+
   private _mobileQueryListener: () => void;
   constructor(
     media: MediaMatcher,
