@@ -10,7 +10,13 @@ services:
     links:
     - db
     tty: true
- 
+  app:
+    build: ./client
+    command: ng serve --host 0.0.0.0 --port 4200
+    volumes:
+    - ./client:/client/
+    ports:
+    - "4200:4200"
   db:
     image: mysql:5.7.18
     ports:
